@@ -1,0 +1,35 @@
+{
+  "name": "vite-hono",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts",
+    "generate": "drizzle-kit generate:pg"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.21.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "@huggingface/inference": "^2.6.7",
+    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "arctic": "^1.8.1",
+    "date-fns": "^3.6.0",
+    "drizzle-orm": "^0.30.10",
+    "drizzle-zod": "^0.5.1",
+    "hono": "^4.3.6",
+    "hono-rate-limiter": "^0.3.0",
+    "lucia": "^3.2.0",
+    "pg": "^8.11.5",
+    "resend": "^3.2.0",
+    "zod": "^3.23.6",
+    "zustand": "^4.5.2"
+  }
+}
